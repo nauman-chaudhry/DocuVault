@@ -91,22 +91,22 @@ export default function DashboardDefault() {
 
       {/* Stats Row */}
       <Grid item xs={12} sm={6} md={4} lg={2}>
-        <AnalyticEcommerce title="Total" count={String(totalDocuments)} />
+        <AnalyticEcommerce title="Total" count={String(totalDocuments)} color="primary" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={2}>
-        <AnalyticEcommerce title="Pending" count={String(pendingDocuments)} />
+        <AnalyticEcommerce title="Pending" count={String(pendingDocuments)} color="warning" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={2}>
-        <AnalyticEcommerce title="Approved" count={String(approvedDocuments)} />
+        <AnalyticEcommerce title="Approved" count={String(approvedDocuments)} color="success" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={2}>
-        <AnalyticEcommerce title="Rejected" count={String(rejectedDocuments)} />
+        <AnalyticEcommerce title="Rejected" count={String(rejectedDocuments)} color="error" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={2}>
-        <AnalyticEcommerce title="In Review" count={String(inReviewDocuments)} />
+        <AnalyticEcommerce title="In Review" count={String(inReviewDocuments)} color="info" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={2}>
-        <AnalyticEcommerce title="Paid" count={String(paidDocuments)} />
+        <AnalyticEcommerce title="Paid" count={String(paidDocuments)} color="success" />
       </Grid>
 
       <Grid item md={8} sx={{ display: { sm: 'none', md: 'block', lg: 'none' } }} />
