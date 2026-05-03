@@ -41,8 +41,6 @@ function OrderTableHead({ order, orderBy }) {
 }
 
 function OrderStatus({ status }) {
-  console.log("Status:", status);  // Debugging line to check status value
-
   let color;
   let title;
 
@@ -59,9 +57,21 @@ function OrderStatus({ status }) {
       color = 'error';
       title = 'Rejected';
       break;
+    case 'Paid':
+      color = 'success';
+      title = 'Paid';
+      break;
+    case 'In Review by Finance Department':
+      color = 'info';
+      title = 'In Review';
+      break;
+    case 'Processing Payment':
+      color = 'info';
+      title = 'Processing';
+      break;
     default:
       color = 'primary';
-      title = status;  // Display the actual status if not matched
+      title = status;
   }
 
   return (
